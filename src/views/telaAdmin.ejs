@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="script.js"></script>
+    <title>Hackthon</title>
+</head>
+<body>
+    <header>
+        <h1>Hackathon da madrugada</h1>
+    </header>
+</body>
+
+<main>
+
+    <section class="DashBoard">
+                <p>Hackthon da  madrugada</p>
+                <p>Quantidade de perguntas: 15</p>
+                <p>Equipes cadastradas: 3</p>
+                
+    </section>
+<h2>Equipes</h2>
+
+    <section >
+        <div class="container">
+            <div class="card">
+                <p>Cactos</p> 
+                    <form action="" onsubmit="Form2.submit(event)">
+                    <button  class="buttonDelete" >Excluir </button>
+                  </form>
+            </div>
+            <div class="card">
+                <p>Furacões</p> 
+                    <form action="" onsubmit="Form2.submit(event)">
+                    <button  class="buttonDelete" >Excluir </button>
+                  </form>
+            </div>
+            <div class="card">
+                <p>Famosinhos</p> 
+                    <form  action="" onsubmit="Form2.submit(event)">
+                    <button  class="buttonDelete" >Excluir </button>
+                  </form>
+            </div>
+                   <form action="" onsubmit="Form3.submit(event)">
+                    <button class="buttonSubmit">Nova equipe</button>
+                  </form>
+            
+
+        </div>
+        
+
+    </section>
+
+    <h2>Perguntas</h2>
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <p>Qual o valor de PI</p> 
+                    <form  action="" onsubmit="Form1.submit(event)">
+                    <button  class="buttonDelete" >Excluir </button>
+                  </form>
+            </div>
+                  <form action="" onsubmit="Form4.submit(event)">
+                    <button class="buttonSubmit">Nova Pergunta</button>
+                  </form>
+        </div>
+    </section>
+
+    <footer class="footerProps">
+   
+    </footer>
+<!--     MODAL PARA APAGAR PERGUNTA -->
+    <div class="modal-overlay">
+      
+        <div class="modalDelete">
+
+          
+            <div class="actions">
+                <a onclick="Modal1.close()" href="#">
+                    <img  src="/assets/remove.svg" alt="Fechar">
+                </a>
+            </div>
+            <div class="descriptions">
+                <h2 class="titleAvaliation">Excluir Pergunta</h2>
+            </div>
+
+            <div class="input-area">
+            <div class="input-grups">
+                <label for="" class="sr-only">Senha:</label>
+                <input   required type="password" name="password" id=""  placeholder="Digite a senha">
+            </div>
+        
+            <footer>
+                <button onclick="Modal1.close()" class="buttonDelete" for = "deleteQuestionForm" form="deleteCommentForm" id="deleteQuestion">Excluir</button>
+            </footer>
+
+            <form method="post" name = "deleteQuestion" id="deleteQuestionForm"></form>
+   
+           </div>
+      </div> 
+      
+    </div>
+         </div>
+
+
+<!--       MODAL PARA APAGAR EQUIPE -->
+       
+    <div class="modal-overlay2">
+     
+        <div class="modalDelete">
+            <div class="actions">
+                <a onclick="Modal2.close()" href="#">
+                    <img  src="/assets/remove.svg" alt="Fechar">
+                </a>
+            </div>
+            <div class="descriptions">
+                <h2 class="titleAvaliation">Excluir Equipe</h2>
+            </div>
+
+            <div class="input-area">
+            <div class="input-grups">
+                <label for="" class="sr-only">Senha:</label>
+                <input required type="password" name="" id="password"  placeholder="Digite a senha">
+            </div>
+        
+            <footer>
+                <button onclick="Modal2.close()" class="buttonDelete" for = "deleteSquadForm" form="deleteSquadForm">Excluir</button>
+            </footer>
+             <form method="post" name = "deleteSquadForm"></form>
+   
+           </div>
+      </div> 
+      
+    </div>
+
+
+  <!--       MODAL PARA CRIAR EQUIPE -->
+       
+    <div class="modal-overlay3">
+     
+        <div class="modalDelete">
+            <div class="actions">
+                <a onclick="Modal3.close()" href="#">
+                    <img  src="/assets/remove.svg" alt="Fechar">
+                </a>
+            </div>
+            <div class="descriptions">
+                <h2 class="titleAvaliation">Criar Equipe</h2>
+            </div>
+
+            <div class="input-area">
+            <div class="input-grups">
+                <label for="" class="sr-only">Nome:</label>
+                <input required type="password" name="Nome"  placeholder="Digite o nome">
+            </div>
+            <div class="input-grups">
+                <label for="" class="sr-only">Senha:</label>
+                <input required type="password" name="password"  placeholder="Digite a senha">
+            </div>
+        
+            <footer>
+                <button onclick="Modal3.close()" class="buttonSubmit" for = "createSquadForm" form="createSquadForm" >Salvar</button>
+            </footer>
+            <form method="post" name = "createSquadForm="deleteSquadForm</form>
+   
+           </div>
+      </div> 
+      
+    </div>
+
+  <!--       MODAL PARA CRIAR PERGUNTA -->
+       
+    <div class="modal-overlay4">
+     
+        <div class="modalDelete">
+            <div class="actions">
+                <a onclick="Modal4.close()" href="#">
+                    <img  src="/assets/remove.svg" alt="Fechar">
+                </a>
+            </div>
+            <div class="descriptions">
+                <h2 class="titleAvaliation">Criar Pergunta</h2>
+            </div>
+
+            <div class="input-area">
+            <div class="input-grups">
+                <label for="" class="sr-only">Pergunta:</label>
+                <input required  name="Nome"  placeholder="Digite a pergunta">
+            </div>
+            <div class="input-grups">
+                <label for="" class="sr-only">Resposta: </label>
+                <input required  name="Nome"  placeholder="Digite a resposta">
+            </div>
+            <div class="input-grups">
+                <label for="" class="sr-only">Senha:</label>
+                <input required type="password" name="password"  placeholder="Digite a senha">
+            </div>
+        
+            <footer>
+                <button onclick="Modal4.close()" class="buttonSubmit" for = "createQuestionForm" form="createQuestionForm" >Salvar</button>
+            </footer>
+            <form method="post" name = "createQuestionForm="deleteSquadForm</form>
+   
+           </div>
+      </div> 
+      
+    </div>
+    
+    
+    
+    </main>
+
+
+</html>
